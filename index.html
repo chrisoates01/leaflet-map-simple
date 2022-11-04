@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">EDIT map title</div>
+  <div id="map-title">Raleigh, NC</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,8 +27,8 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [35.7874, -78.6821], // EDIT coordinates to re-center map
+    zoom: 14,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
@@ -41,8 +41,20 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([35.7874, -78.6821]).addTo(map) // EDIT marker coordinates
+  .bindPopup("NC State University Main Campus"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.7818, -78.6763]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Jordan Hall"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.8008, -78.7196]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Carter-Finley Stadium"); // EDIT pop-up text message
+
+  /* Display a point marker with pop-up text */
+  L.marker([35.78531372508559, -78.666877757698293]).addTo(map) // EDIT marker coordinates
+  .bindPopup("SAS Hall"); // EDIT pop-up text message
 
   </script>
 </body>
